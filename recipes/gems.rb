@@ -4,7 +4,7 @@
 ### GEMFILE ###
 
 ## Ruby on Rails
-insert_into_file 'Gemfile', "ruby '1.9.3'\n", :before => "gem 'rails', '3.2.6'" if prefer :deploy, 'heroku'
+insert_into_file 'Gemfile', "ruby '1.9.3'\n", :before => "gem 'rails', '3.2.11'" if prefer :deploy, 'heroku'
 
 ## Web Server
 if (prefs[:dev_webserver] == prefs[:prod_webserver])
