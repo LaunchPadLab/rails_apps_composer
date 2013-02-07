@@ -24,6 +24,10 @@ end
 # gsub_file 'Gemfile', /gem 'sqlite3'\n/, '' unless prefer :database, 'sqlite'
 gsub_file 'Gemfile', /gem 'sqlite3'\n/, "gem 'pg', '>= 0.14.1'" unless prefer :database, 'sqlite'
 
+
+## Set up Quiet Assets
+gem 'quiet_assets', group: [:development]
+
 # gem 'mongoid', '>= 3.0.19' if prefer :orm, 'mongoid'
 # unless File.open('Gemfile').lines.any?{|line| line.include?('pg')}
 #   gem 'pg', '>= 0.14.1' if prefer :database, 'postgresql'
