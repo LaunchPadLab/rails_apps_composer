@@ -8,7 +8,9 @@ if prefer :git, true
   copy_from 'https://raw.github.com/RailsApps/rails-composer/master/files/gitignore.txt', '.gitignore'
   git :init
   git :add => '-A'
-  git :commit => '-qm "rails_apps_composer: initial commit"'
+  git :commit => '-am "LPL: initial commit"'
+  git :remote => "add origin git@github.com:LaunchPadLab/#{app_name.humanize.titleize}"
+  git :push => 'origin master'
 end
 
 __END__
