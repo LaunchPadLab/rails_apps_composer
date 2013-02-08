@@ -1,0 +1,37 @@
+recipes:
+- setup
+- readme
+- gems
+- testing
+- email
+- models
+- controllers
+- views
+- routes
+- frontend
+- database
+- extras
+
+prefs:
+  :dev_webserver: webrick
+  :prod_webserver: same
+  :database: sqlite
+  :templates: erb
+  :unit_test: rspec
+  :integration: cucumber
+  :fixtures: factory_girl
+  :frontend: none
+  :form_builder: none
+  :email: gmail
+  :authentication: devise
+  :devise_modules: default
+  :authorization: none
+  
+gems:
+- heroku
+- nokogiri
+- kaminari
+
+args:
+  :skip_test_unit: yes 
+  :skip_active_record: false

@@ -1,6 +1,54 @@
 h2. The LaunchPad Lab Starter App (forked from Rails Apps Composer)
 
-This is customized Ruby on Rails application generator using the best practices and processes of LaunchPad Lab.
+This is a customized Ruby on Rails application generator using the best practices and processes of LaunchPad Lab.
+
+<pre>
+Gems:
+- Deploy: heroku
+- Database: pg
+- Web Server: thin
+- Debug: exception_notification
+- Test: rspec_rails, factory_girl_rails, faker, capybara, launchy, database_cleaner
+- Misc: quiet_assets
+- CSS: bootstrap_sass
+- Bundle install gems
+
+Controllers:
+- Creates pages controller with default home action
+
+Routes:
+- Creates route for home page
+
+Views:
+- Remove index.html from public folder
+- Create home template
+
+Database:
+- Configures database.yml adapters
+- Run rake tasks: create and migrate
+
+Application Config:
+- Configures test framework on MVC component creation
+- Run rspec install script
+- Set assets initialize on precompile to false
+
+CSS:
+- Change file extension to application.css.scss
+- Delete comments
+- Import bootstrap styling
+
+Git:
+- Create git repo and first commit
+- Push to remote GitHub repo
+
+Heroku:
+- Create heroku repo with name
+- Push to repo
+- Run migrations
+- Add default collaborators
+- Add-ons: New Relic, PG Backup
+
+</pre>
 
 <pre>
 $ rails_apps_composer list
