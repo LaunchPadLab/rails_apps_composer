@@ -1,4 +1,6 @@
-The LaunchPad Lab Starter App (forked from Rails Apps Composer)
+h2. The LaunchPad Lab Starter App (forked from Rails Apps Composer)
+
+This is customized Ruby on Rails application generator using the best practices and processes of LaunchPad Lab.
 
 <pre>
 $ rails_apps_composer list
