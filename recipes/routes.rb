@@ -6,7 +6,7 @@ after_bundler do
   ### HOME ###
   if prefer :starter_app, 'home_app'
     remove_file 'public/index.html'
-    gsub_file 'config/routes.rb', /get \"home\/index\"/, 'root :to => "home#index"'
+    gsub_file 'config/routes.rb', /get \"home\/index\"/, 'root :to => "pages#home"'
   end
   ### USER_ACCOUNTS ###
   if ['users_app','admin_app'].include? prefs[:starter_app]

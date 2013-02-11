@@ -4,28 +4,33 @@ recipes:
 - gems
 - testing
 - email
-- models
 - controllers
 - views
 - routes
 - frontend
-- database
 - extras
 
 prefs:
-  :dev_webserver: webrick
+  :dev_webserver: thin
   :prod_webserver: same
-  :database: sqlite
+  :database: postgresql
   :templates: erb
   :unit_test: rspec
   :integration: cucumber
   :fixtures: factory_girl
-  :frontend: none
+  :frontend: foundation
   :form_builder: none
   :email: gmail
-  :authentication: devise
-  :devise_modules: default
+  :authentication: none
+  :devise_modules: none
   :authorization: none
+  :starter_app: home_app
+  :quiet_assets: true
+  :local_env_file: false
+  :better_errors: false
+  :ban_spiders: false
+  :github: true
+  :rvmrc: false
   
 gems:
 - heroku

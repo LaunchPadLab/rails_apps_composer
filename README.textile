@@ -47,6 +47,7 @@ Heroku:
 - Run migrations
 - Add default collaborators
 - Add-ons: New Relic, PG Backup
+- Heroku ENV
 
 </pre>
 
